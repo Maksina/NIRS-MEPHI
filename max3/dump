@@ -1,0 +1,246 @@
+
+t.abs:     file format elf32-nmc
+
+
+Disassembly of section .init:
+
+0000001e <_init>:
+  1e:	00 00 37 07 	  return;
+  1f:	00 00 10 50 	with nul;
+  20:	00 00 10 50 	with nul;
+  21:	00 00 10 50 	with nul;
+
+Disassembly of section .text:
+
+00000022 <result_code>:
+  22:	ff ff ff ff 	undef inst
+  23:	00 00 00 00 	  ;
+
+00000024 <start>:
+  24:	00 00 d7 4b 	ar7 =  0x400 addr with nul;
+  25:	00 04 00 00 
+  26:	07 c0 27 48 	  goto 0x32 gr7=false;
+  27:	32 00 00 00 
+  28:	00 00 d7 3f 	push gr7 with nul;
+  29:	00 00 d7 3f 	push gr7 with nul;
+
+0000002a <int_stop>:
+  2a:	00 00 27 48 	  goto 0x58 with nul;
+  2b:	58 00 00 00 
+  2c:	00 00 10 50 	with nul;
+  2d:	00 00 10 50 	with nul;
+
+0000002e <_sync>:
+  2e:	00 00 37 07 	  return;
+  2f:	00 00 10 50 	with nul;
+  30:	00 00 10 50 	with nul;
+  31:	00 00 10 50 	with nul;
+
+00000032 <begin_prog>:
+  32:	00 00 27 4a 	  call 0x1e with nul;
+  33:	1e 00 00 00 
+  34:	00 00 10 50 	with nul;
+  35:	00 00 10 50 	with nul;
+  36:	00 00 27 4a 	  call 0x90 with nul;
+  37:	90 00 00 00 
+  38:	00 00 10 50 	with nul;
+  39:	00 00 10 50 	with nul;
+  3a:	00 00 c7 3f 	push ar7, gr7 with nul;
+  3b:	00 00 00 00 	  ;
+
+0000003c <terminate>:
+  3c:	00 00 27 4a 	  call 0xde with nul;
+  3d:	de 00 00 00 
+  3e:	00 00 10 50 	with nul;
+  3f:	00 00 10 50 	with nul;
+  40:	00 00 c5 39 	pop ar5, gr5 with nul;
+  41:	6f d9 15 74 	gr0 = gr5 gr7 = gr5;
+  42:	00 00 17 62 	[0x22] = gr7 with nul;
+  43:	22 00 00 00 
+  44:	00 00 27 48 	  goto 0x2a with nul;
+  45:	2a 00 00 00 
+  46:	00 00 10 50 	with nul;
+  47:	00 00 10 50 	with nul;
+
+00000048 <_exit>:
+  48:	00 00 d7 47 	ar7 = ar7 + 0xfffffffe addr with nul;
+  49:	fe ff ff ff 
+  4a:	00 00 27 48 	  goto 0x3c with nul;
+  4b:	3c 00 00 00 
+  4c:	00 00 10 50 	with nul;
+  4d:	00 00 10 50 	with nul;
+
+0000004e <__exit>:
+  4e:	00 00 d7 47 	ar7 = ar7 + 0xfffffffe addr with nul;
+  4f:	fe ff ff ff 
+  50:	00 00 c5 39 	pop ar5, gr5 with nul;
+  51:	6f d9 15 74 	gr0 = gr5 gr7 = gr5;
+  52:	00 00 17 62 	[0x22] = gr7 with nul;
+  53:	22 00 00 00 
+  54:	00 00 27 48 	  goto 0x2a with nul;
+  55:	2a 00 00 00 
+  56:	00 00 10 50 	with nul;
+  57:	00 00 10 50 	with nul;
+
+00000058 <stop>:
+  58:	00 00 27 48 	  goto 0x58 with nul;
+  59:	58 00 00 00 
+  5a:	00 00 10 50 	with nul;
+  5b:	00 00 10 50 	with nul;
+
+0000005c <_max>:
+  5c:	00 00 c2 3f 	push ar2, gr2 with nul;
+  5d:	00 00 c1 3f 	push ar1, gr1 with nul;
+  5e:	00 00 c0 3f 	push ar0, gr0 with nul;
+  5f:	00 00 00 00 	  ;
+  60:	00 00 d0 47 	ar0 = ar7 + 0xfffffff8 addr with nul;
+  61:	f8 ff ff ff 
+  62:	00 00 10 38 	gr0 = [--ar0] with nul;
+  63:	00 00 11 38 	gr1 = [--ar0] with nul;
+  64:	00 00 12 38 	gr2 = [--ar0] with nul;
+  65:	0d e0 10 50 	gr5 = gr0 - gr1;
+  66:	00 00 22 48 	if >  goto 0x6e with nul;
+  67:	6e 00 00 00 
+  68:	00 00 10 50 	with nul;
+  69:	00 00 10 50 	with nul;
+  6a:	00 00 27 48 	  goto 0x74 with nul;
+  6b:	74 00 00 00 
+  6c:	00 00 10 50 	with nul;
+  6d:	00 00 10 50 	with nul;
+
+0000006e <label1>:
+  6e:	00 00 10 75 	gr4 = gr0 with nul;
+  6f:	00 00 00 00 	  ;
+  70:	00 00 27 48 	  goto 0x7a with nul;
+  71:	7a 00 00 00 
+  72:	00 00 10 50 	with nul;
+  73:	00 00 10 50 	with nul;
+
+00000074 <label2>:
+  74:	00 00 11 75 	gr4 = gr1 with nul;
+  75:	00 00 00 00 	  ;
+  76:	00 00 27 48 	  goto 0x7a with nul;
+  77:	7a 00 00 00 
+  78:	00 00 10 50 	with nul;
+  79:	00 00 10 50 	with nul;
+
+0000007a <label3>:
+  7a:	a5 e0 10 50 	gr5 = gr2 - gr4;
+  7b:	00 00 00 00 	  ;
+  7c:	00 00 22 48 	if >  goto 0x84 with nul;
+  7d:	84 00 00 00 
+  7e:	00 00 10 50 	with nul;
+  7f:	00 00 10 50 	with nul;
+  80:	00 00 27 48 	  goto 0x8a with nul;
+  81:	8a 00 00 00 
+  82:	00 00 10 50 	with nul;
+  83:	00 00 10 50 	with nul;
+
+00000084 <label4>:
+  84:	00 00 12 75 	gr4 = gr2 with nul;
+  85:	00 00 00 00 	  ;
+  86:	00 00 27 48 	  goto 0x8a with nul;
+  87:	8a 00 00 00 
+  88:	00 00 10 50 	with nul;
+  89:	00 00 10 50 	with nul;
+
+0000008a <exit_max>:
+  8a:	00 00 c0 39 	pop ar0, gr0 with nul;
+  8b:	00 00 c1 39 	pop ar1, gr1 with nul;
+  8c:	00 00 c2 39 	pop ar2, gr2 with nul;
+  8d:	00 00 37 07 	  return;
+  8e:	00 00 10 50 	with nul;
+  8f:	00 00 10 50 	with nul;
+
+00000090 <__main>:
+  90:	00 00 c6 3f 	push ar6, gr6 with nul;
+  91:	00 00 c2 3f 	push ar2, gr2 with nul;
+  92:	00 00 c1 3f 	push ar1, gr1 with nul;
+  93:	00 00 c0 3f 	push ar0, gr0 with nul;
+  94:	00 00 d7 47 	ar7 = ar7 + 0x8 addr with nul;
+  95:	08 00 00 00 
+  96:	00 00 d6 47 	ar6 = ar7 + 0xfffffff8 addr with nul;
+  97:	f8 ff ff ff 
+  98:	00 00 00 44 	gr0 = 0x1;
+  99:	01 00 00 00 
+  9a:	00 00 90 33 	[ar6] = gr0 with nul;
+  9b:	00 00 00 00 	  ;
+  9c:	00 00 90 47 	ar0 = ar6 + 0x1 addr with nul;
+  9d:	01 00 00 00 
+  9e:	00 00 08 74 	gr0 = ar0 with nul;
+  9f:	00 00 00 00 	  ;
+  a0:	00 00 40 44 	gr1 = 0x2;
+  a1:	02 00 00 00 
+  a2:	00 00 10 5a 	ar0 = gr0 with nul;
+  a3:	00 00 11 32 	[ar0] = gr1 with nul;
+  a4:	00 00 90 47 	ar0 = ar6 + 0x2 addr with nul;
+  a5:	02 00 00 00 
+  a6:	00 00 08 74 	gr0 = ar0 with nul;
+  a7:	00 00 00 00 	  ;
+  a8:	00 00 40 44 	gr1 = 0x3;
+  a9:	03 00 00 00 
+  aa:	00 00 10 5a 	ar0 = gr0 with nul;
+  ab:	00 00 11 32 	[ar0] = gr1 with nul;
+  ac:	00 00 0f 74 	gr0 = ar7 with nul;
+  ad:	00 00 10 5a 	ar0 = gr0 with nul;
+  ae:	00 00 10 46 	ar0 = ar0 + 0xffffffff addr with nul;
+  af:	ff ff ff ff 
+  b0:	00 00 48 74 	gr1 = ar0 with nul;
+  b1:	00 00 92 31 	gr2 = [ar6] with nul;
+  b2:	00 00 50 5a 	ar0 = gr1 with nul;
+  b3:	00 00 12 32 	[ar0] = gr2 with nul;
+  b4:	00 00 90 47 	ar0 = ar6 + 0x1 addr with nul;
+  b5:	01 00 00 00 
+  b6:	00 00 88 74 	gr2 = ar0 with nul;
+  b7:	00 00 10 5a 	ar0 = gr0 with nul;
+  b8:	00 00 10 46 	ar0 = ar0 + 0xfffffffe addr with nul;
+  b9:	fe ff ff ff 
+  ba:	00 00 48 74 	gr1 = ar0 with nul;
+  bb:	00 00 90 5a 	ar0 = gr2 with nul;
+  bc:	00 00 12 30 	gr2 = [ar0] with nul;
+  bd:	00 00 50 5a 	ar0 = gr1 with nul;
+  be:	00 00 12 32 	[ar0] = gr2 with nul;
+  bf:	00 00 00 00 	  ;
+  c0:	00 00 90 47 	ar0 = ar6 + 0x2 addr with nul;
+  c1:	02 00 00 00 
+  c2:	00 00 88 74 	gr2 = ar0 with nul;
+  c3:	00 00 10 5a 	ar0 = gr0 with nul;
+  c4:	00 00 10 46 	ar0 = ar0 + 0xfffffffd addr with nul;
+  c5:	fd ff ff ff 
+  c6:	00 00 48 74 	gr1 = ar0 with nul;
+  c7:	00 00 90 5a 	ar0 = gr2 with nul;
+  c8:	00 00 12 30 	gr2 = [ar0] with nul;
+  c9:	00 00 50 5a 	ar0 = gr1 with nul;
+  ca:	00 00 12 32 	[ar0] = gr2 with nul;
+  cb:	00 00 00 00 	  ;
+  cc:	00 00 27 4a 	  call 0x5c with nul;
+  cd:	5c 00 00 00 
+  ce:	00 00 10 50 	with nul;
+  cf:	00 00 10 50 	with nul;
+  d0:	00 00 00 44 	gr0 = 0x0;
+  d1:	00 00 00 00 
+  d2:	00 00 d0 75 	gr7 = gr0 with nul;
+  d3:	00 00 00 00 	  ;
+  d4:	00 00 d7 47 	ar7 = ar7 + 0xfffffff8 addr with nul;
+  d5:	f8 ff ff ff 
+  d6:	00 00 c0 39 	pop ar0, gr0 with nul;
+  d7:	00 00 c1 39 	pop ar1, gr1 with nul;
+  d8:	00 00 c2 39 	pop ar2, gr2 with nul;
+  d9:	00 00 c6 39 	pop ar6, gr6 with nul;
+  da:	00 00 37 07 	  return;
+  db:	00 00 10 50 	with nul;
+  dc:	00 00 10 50 	with nul;
+  dd:	00 00 10 50 	with nul;
+
+Disassembly of section .fini:
+
+000000de <_fini>:
+  de:	00 00 37 07 	  return;
+  df:	00 00 10 50 	with nul;
+  e0:	00 00 10 50 	with nul;
+  e1:	00 00 10 50 	with nul;
+
+Disassembly of section .stack:
+
+00000400 <__bss_start>:
+	...
