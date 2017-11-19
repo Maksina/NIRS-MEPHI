@@ -1,6 +1,9 @@
 global _max: label;
 begin ".text"
 <_max>
+        push ar5, gr5;
+        push ar4, gr4;
+        push ar3, gr3;
         push ar2, gr2;
         push ar1, gr1;
         push ar0, gr0;
@@ -29,5 +32,8 @@ begin ".text"
         pop ar0, gr0;
         pop ar1, gr1;
         pop ar2, gr2;
+        pop ar3, gr3;
+        pop ar4, gr4;
+        pop ar5, gr5;
         return;
 end ".text";                                                                                   
