@@ -6,19 +6,19 @@ begin ".text"
         push ar1, gr1;
         push ar0, gr0;
         ar0 = ar7 - 10;
-        gr0 = [--ar0];
-        gr2 = gr0;
-        gr1 = gr0;
-        gr3 = gr0;
+        gr7 = [--ar0];
+        gr2 = gr7;
+        gr1 = gr7;
+        gr3 = gr7;
         goto label1;
 <label1> 
-        gr0 = gr2;
+        gr7 = gr2;
         gr3--;
         gr1 = gr3 - 1;
         if > goto label3;
         goto label2;
 <label3>
-        gr2 = gr2 + gr0;
+        gr2 = gr2 + gr7;
         gr1--;
         if > goto label3;
         goto label1;
